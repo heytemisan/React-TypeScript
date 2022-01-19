@@ -5,6 +5,7 @@ import { PersonList } from './components/03Lesson-Personlist/Personlist';
 import { Status } from './components/04Lesson-status/Status';
 import { Grammy } from './components/05-Lesson-childrenProps/Grammy';
 import { Heading } from './components/05-Lesson-childrenProps/Heading';
+import { OptionalType } from './components/05-Lesson-childrenProps/OptionalType';
 
 function App() {
 
@@ -33,12 +34,17 @@ function App() {
 
   return (
     <div className="App">
-      <Greet name="Temisan" numberCount={10} isLoggedIn={false}/>
+      <Greet name="Temisan" numberCount={10} isLoggedIn={true}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
       <Status status='loading'/>
       <Heading>Child props</Heading>
-      
+      <Grammy>
+        <Heading>
+          hello world 
+        </Heading>
+      </Grammy>
+      <OptionalType name="john" isLoggedIn={true}/>
     </div> 
   );
 }

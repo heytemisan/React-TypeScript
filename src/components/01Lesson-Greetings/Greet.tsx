@@ -8,7 +8,8 @@ export const Greet = (props:GreetProps) => {
     return (
         <div>
             <h2>{
-                props.isLoggedIn ? `Welcome to {props.name}, you have {props.numberCount} unread messages` : 'Welcome guest'
+                props.isLoggedIn ? 
+                `Welcome to ${props.name}, you have ${props.numberCount} unread messages` : 'Sign in'
                 }
             </h2>
         </div>

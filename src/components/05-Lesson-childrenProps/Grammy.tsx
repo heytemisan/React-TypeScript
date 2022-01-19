@@ -1,11 +1,11 @@
 type grammyProps = {
-    children:React.ReactNode
+    children:React.ReactNode //very important
 }
 
 export const Grammy = (props:grammyProps) => {
     return (
-        <h2>
+        <p>
             {props.children}
-        </h2>
+        </p>
     )
 }
