@@ -1,5 +1,5 @@
 type grammyProps = {
-    children:string
+    children:React.ReactNode
 }
 
 export const Grammy = (props:grammyProps) => {
