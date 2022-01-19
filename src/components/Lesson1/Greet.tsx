@@ -1,11 +1,12 @@
 type GreetProps = {
-    name: string
+    name: string,
+    number: number,
 }
 
 export const Greet = (props:GreetProps) => {
     return (
         <div>
-            <h2>Welcome to {props.name}, you have 10 unread messages</h2>
+            <h2>Welcome to {props.name}, you have {props.number} unread messages</h2>
         </div>
     )
 }
