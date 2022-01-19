@@ -4,8 +4,8 @@ import { Greet } from './components/Lesson1/Greet';
 function App() {
   return (
     <div className="App">
-      <Greet name="Temisan" number={10}/>
-    </div>
+      <Greet name="Temisan" numberCount={10} isLoggedIn={false}/>
+    </div> 
   );
 }
 
