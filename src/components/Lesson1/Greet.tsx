@@ -1,7 +1,7 @@
 type GreetProps = {
     name: string,
     numberCount: number,
-    isLoggedIn: true,
+    isLoggedIn: boolean,
 }
 
 export const Greet = (props:GreetProps) => {
