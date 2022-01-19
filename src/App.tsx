@@ -47,11 +47,11 @@ function App() {
         </Heading>
       </Grammy>
       <OptionalType name="john" isLoggedIn={true} />
-      <Input />
+      <Input value='' handleChange={(e)=> console.log(e)
+      }/>
       <Button handleClick={(event, id) => {
         console.log('hello', event, id);
-      }
-      } />
+      }}/>
     </div>
   );
 }
