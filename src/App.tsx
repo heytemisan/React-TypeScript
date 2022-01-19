@@ -34,7 +34,7 @@ function App() {
       <Greet name="Temisan" numberCount={10} isLoggedIn={false}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
-      <Status status='error'/>
+      <Status status='loading'/>
     </div> 
   );
 }
