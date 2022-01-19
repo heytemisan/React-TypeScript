@@ -1,6 +1,6 @@
 import './App.css';
-import { Greet } from './components/Lesson1/Greet';
-import { Person } from './components/Lesson2/Person';
+import { Greet } from './components/01Lesson-Greetings/Greet';
+import { Person } from './components/02Lesson2-Person/Person';
 
 function App() {
 
