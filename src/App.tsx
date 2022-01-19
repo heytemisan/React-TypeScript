@@ -6,6 +6,7 @@ import { Status } from './components/04Lesson-status/Status';
 import { Grammy } from './components/05-Lesson-childrenProps/Grammy';
 import { Heading } from './components/05-Lesson-childrenProps/Heading';
 import { OptionalType } from './components/05-Lesson-childrenProps/OptionalType';
+import { Button } from './components/06Lesson-Event/eventProps';
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
         </Heading>
       </Grammy>
       <OptionalType name="john" isLoggedIn={true}/>
+      <Button handleClick={ (e, id)=> {
+        console.log('hello', e, id);
+      }
+      }/>
     </div> 
   );
 }
