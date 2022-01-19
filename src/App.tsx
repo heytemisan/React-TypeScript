@@ -4,7 +4,7 @@ import { Greet } from './components/Lesson1/Greet';
 function App() {
   return (
     <div className="App">
-      <Greet/>
+      <Greet name="Temisan"/>
     </div>
   );
 }
