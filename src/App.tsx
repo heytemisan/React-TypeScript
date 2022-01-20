@@ -53,7 +53,7 @@ function App() {
       <Button handleClick={(e, id) => {
         console.log('hello', e, id);
       }}/>
-      <StyledProps styles={{border:"1px solid black", fontFamily:"sans-serif"}}/>
+      <StyledProps styles={{border:"1px solid black", fontFamily:"sans-serif", padding:'30px'}}/>
     </div>
   );
 }
