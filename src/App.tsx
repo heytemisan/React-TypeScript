@@ -49,8 +49,8 @@ function App() {
       <OptionalType name="john" isLoggedIn={true} />
       <Input value='' handleChange={(e)=> console.log(e)
       }/>
-      <Button handleClick={(event, id) => {
-        console.log('hello', event, id);
+      <Button handleClick={(e, id) => {
+        console.log('hello', e, id);
       }}/>
     </div>
   );
