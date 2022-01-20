@@ -8,6 +8,7 @@ import { Heading } from './components/05-Lesson-childrenProps/Heading';
 import { OptionalType } from './components/05-Lesson-childrenProps/OptionalType';
 import { Button } from './components/06Lesson-Event/eventProps';
 import { Input } from './components/06Lesson-Event/Input';
+import { StyledProps } from './components/07-Lesson-styledProps/StyledProps';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
       <Button handleClick={(e, id) => {
         console.log('hello', e, id);
       }}/>
+      <StyledProps styles={{border:"1px solid black", fontFamily:"sans-serif"}}/>
     </div>
   );
 }
