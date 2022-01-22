@@ -1,10 +1,8 @@
 //type is always an object
 export type Name = {
-    names:{
-        firstName: String,
-        lastName: String,
-        age: Number
-    }[]
+    firstName: String,
+    lastName: String,
+    age: Number
 }
 
 
