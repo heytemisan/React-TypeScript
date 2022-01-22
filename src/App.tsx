@@ -1,4 +1,6 @@
 import './App.css';
+import { Box } from './components/Context/Box';
+import { ThemeContextProvider } from './components/Context/ThemeContext';
 import { Greet } from './components/Props/01Lesson-Greetings/Greet';
 import { Person } from './components/Props/02Lesson2-Person/Person';
 import { PersonList } from './components/Props/03Lesson-Personlist/Personlist';
@@ -62,6 +64,9 @@ function App() {
       <User/>
       {/* <UserTypeAssertion/> */}
       <Counter/>
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
     </div>
   );
 }
