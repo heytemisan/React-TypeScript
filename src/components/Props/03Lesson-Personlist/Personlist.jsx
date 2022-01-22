@@ -1,9 +1,7 @@
+import { Name } from './Person.types';
+
 type ListProps = {
-    names:{
-        firstName: String,
-        lastName: String,
-        age: Number
-    }[]
+    names:Name[]
 }
 
 export const PersonList =(props: ListProps)=> {

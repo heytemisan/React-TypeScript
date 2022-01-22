@@ -1,14 +1,14 @@
 import './App.css';
-import { Greet } from './components/01Lesson-Greetings/Greet';
-import { Person } from './components/02Lesson2-Person/Person';
-import { PersonList } from './components/03Lesson-Personlist/Personlist';
-import { Status } from './components/04Lesson-status/Status';
-import { Grammy } from './components/05-Lesson-childrenProps/Grammy';
-import { Heading } from './components/05-Lesson-childrenProps/Heading';
-import { OptionalType } from './components/05-Lesson-childrenProps/OptionalType';
-import { Button } from './components/06Lesson-Event/eventProps';
-import { Input } from './components/06Lesson-Event/Input';
-import { StyledProps } from './components/07-Lesson-styledProps/StyledProps';
+import { Greet } from './components/Props/01Lesson-Greetings/Greet';
+import { Person } from './components/Props/02Lesson2-Person/Person';
+import { PersonList } from './components/Props/03Lesson-Personlist/Personlist';
+import { Status } from './components/Props/04Lesson-status/Status';
+import { Grammy } from './components/Props/05-Lesson-childrenProps/Grammy';
+import { Heading } from './components/Props/05-Lesson-childrenProps/Heading';
+import { OptionalType } from './components/Props/05-Lesson-childrenProps/OptionalType';
+import { Button } from './components/Props/06Lesson-Event/eventProps';
+import { Input } from './components/Props/06Lesson-Event/Input';
+import { StyledProps } from './components/Props/07-Lesson-styledProps/StyledProps';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
     last: 'Wayne',
   }
 
-  const nameList = [
+  const ListProps = [
     {
       firstName: 'Bruce',
       lastName: 'Weng',
@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <Greet name="Temisan" numberCount={10} isLoggedIn={true} />
       <Person name={personName} />
-      <PersonList names={nameList} />
+      <PersonList names={ListProps} />
       <Status status='loading' />
       <Heading>Child props</Heading>
       <Grammy>
