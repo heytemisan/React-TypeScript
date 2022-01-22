@@ -11,6 +11,7 @@ import { Input } from './components/Props/06Lesson-Event/Input';
 import { StyledProps } from './components/Props/07-Lesson-styledProps/StyledProps';
 import { LoggedIn } from './components/State/Loggin';
 import { User } from './components/State/user';
+import { UserTypeAssertion } from './components/State/UserTypeAssertion';
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
       <StyledProps styles={{border:"1px solid black", fontFamily:"sans-serif", padding:'30px'}}/>
       <LoggedIn/>
       <User/>
+      {/* <UserTypeAssertion/> */}
     </div>
   );
 }
