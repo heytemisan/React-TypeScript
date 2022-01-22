@@ -9,6 +9,7 @@ import { OptionalType } from './components/Props/05-Lesson-childrenProps/Optiona
 import { Button } from './components/Props/06Lesson-Event/eventProps';
 import { Input } from './components/Props/06Lesson-Event/Input';
 import { StyledProps } from './components/Props/07-Lesson-styledProps/StyledProps';
+import { Counter } from './components/State/Counter';
 import { LoggedIn } from './components/State/Loggin';
 import { User } from './components/State/user';
 import { UserTypeAssertion } from './components/State/UserTypeAssertion';
@@ -60,6 +61,7 @@ function App() {
       <LoggedIn/>
       <User/>
       {/* <UserTypeAssertion/> */}
+      <Counter/>
     </div>
   );
 }
