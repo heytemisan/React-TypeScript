@@ -1,6 +1,7 @@
 import './App.css';
 import { Box } from './components/Context/Box';
 import { ThemeContextProvider } from './components/Context/ThemeContext';
+import { UserContextProvider } from './components/Context/UserContext';
 import { Greet } from './components/Props/01Lesson-Greetings/Greet';
 import { Person } from './components/Props/02Lesson2-Person/Person';
 import { PersonList } from './components/Props/03Lesson-Personlist/Personlist';
@@ -15,6 +16,7 @@ import { Counter } from './components/State/Counter';
 import { LoggedIn } from './components/State/Loggin';
 import { User } from './components/State/user';
 import { UserTypeAssertion } from './components/State/UserTypeAssertion';
+import { Users } from './components/Context/User';
 
 function App() {
 
@@ -67,6 +69,9 @@ function App() {
       <ThemeContextProvider>
         <Box/>
       </ThemeContextProvider>
+      <UserContextProvider>
+        <Users/>
+      </UserContextProvider>
     </div>
   );
 }
