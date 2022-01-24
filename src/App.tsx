@@ -25,6 +25,8 @@ import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/Restrcitions/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
+import { CustomButton } from './components/html/Button';
+import { CustomInput } from './components/html/Input';
 
 function App() {
 
@@ -86,6 +88,11 @@ function App() {
       <Private isLoggedIn={true} component={Profile}/>
       <RandomNumber value={10} isPositive/>
       <Toast position='right-center'/>
+      <CustomButton variant="primary" onClick={()=> console.log('clicked')
+      }>
+        secondary button
+      </CustomButton>
+      <CustomInput/>
       {/* <List 
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={(item) => console.log(item)}
