@@ -19,6 +19,7 @@ import { UserTypeAssertion } from './components/State/UserTypeAssertion';
 import { Users } from './components/Context/User';
 import { DomRef } from './components/Refs/DomRef';
 import { MutableRef } from './components/Refs/Mutable';
+import {CounterProps} from './components/class/Counter'
 
 function App() {
 
@@ -76,6 +77,7 @@ function App() {
       </UserContextProvider>
       <DomRef/>
       <MutableRef/>
+      <CounterProps message="chain of value"/>
     </div>
   );
 }

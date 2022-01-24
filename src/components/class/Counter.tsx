@@ -9,7 +9,7 @@ type counterState = {
     count: number;
 }
 
-export class Counter extends Component<counterProp, counterState>{
+export class CounterProps extends Component<counterProp, counterState>{
     state = {
         count: 0,
     }
