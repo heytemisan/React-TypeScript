@@ -27,6 +27,7 @@ import { RandomNumber } from './components/Restrcitions/RandomNumber';
 import { Toast } from './components/templateliterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { CustomInput } from './components/html/Input';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
 
@@ -93,6 +94,14 @@ function App() {
         secondary button
       </CustomButton>
       <CustomInput/>
+      <Text
+        as='label' size='lg'htmlFor='ID'>
+          label
+      </Text>
+      <Text
+        as='h1' size='lg'>
+          Heading
+      </Text>
       {/* <List 
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={(item) => console.log(item)}
