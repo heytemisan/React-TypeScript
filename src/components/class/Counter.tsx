@@ -1,14 +1,21 @@
 import { Component } from "react";
 
 /** The Count value is 5 */
+type counterProp = {
+    message: string;
+}
 
-export class Counter extends Component {
+type counterState = {
+    count: number;
+}
+
+export class Counter extends Component<counterProp, counterState>{
     state = {
         count: 0,
     }
 
 handleClick = () => {
-    this.setState((prevState)=> ({count: prevState + 1}))
+    this.setState((prevState)=> ({count: prevState.count + 1}))
 }
 
 render(){
