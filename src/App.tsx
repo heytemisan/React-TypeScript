@@ -20,6 +20,8 @@ import { Users } from './components/Context/User';
 import { DomRef } from './components/Refs/DomRef';
 import { MutableRef } from './components/Refs/Mutable';
 import {CounterProps} from './components/class/Counter'
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
 
@@ -76,8 +78,9 @@ function App() {
         <Users/>
       </UserContextProvider>
       <DomRef/>
-      <MutableRef/>
+      {/* <MutableRef/> */}
       <CounterProps message="chain of value"/>
+      <Private isLoggedIn={true} component={Profile}/>
     </div>
   );
 }
