@@ -22,6 +22,7 @@ import { DomRef } from './components/Refs/DomRef';
 import {CounterProps} from './components/class/Counter'
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
+import { List } from './components/generics/List';
 
 function App() {
 
@@ -81,6 +82,29 @@ function App() {
       {/* <MutableRef/> */}
       <CounterProps message="chain of value"/>
       <Private isLoggedIn={true} component={Profile}/>
+      {/* <List 
+        items={['Batman', 'Superman', 'Wonder Woman']}
+        onClick={(item) => console.log(item)}
+      />
+      <List 
+        items={[1,2,3,4,5]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      {/* <List 
+        items={[
+          {
+            id:1,
+            first: 'Bruce',
+            last:'Wayne',
+          },
+          {
+            id:2,
+            first: 'Jacob',
+            last:'Life',
+          }
+        ]}
+        onClick={(item) => console.log(item)}
+      /> */}
     </div>
   );
 }
