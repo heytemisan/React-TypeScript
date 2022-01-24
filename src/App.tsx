@@ -24,6 +24,7 @@ import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
 import { RandomNumber } from './components/Restrcitions/RandomNumber';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
 
@@ -84,6 +85,7 @@ function App() {
       <CounterProps message="chain of value"/>
       <Private isLoggedIn={true} component={Profile}/>
       <RandomNumber value={10} isPositive/>
+      <Toast position='right-center'/>
       {/* <List 
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={(item) => console.log(item)}
