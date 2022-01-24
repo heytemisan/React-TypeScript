@@ -17,6 +17,8 @@ import { LoggedIn } from './components/State/Loggin';
 import { User } from './components/State/user';
 import { UserTypeAssertion } from './components/State/UserTypeAssertion';
 import { Users } from './components/Context/User';
+import { DomRef } from './components/Refs/DomRef';
+import { MutableRef } from './components/Refs/Mutable';
 
 function App() {
 
@@ -72,6 +74,8 @@ function App() {
       <UserContextProvider>
         <Users/>
       </UserContextProvider>
+      <DomRef/>
+      <MutableRef/>
     </div>
   );
 }
