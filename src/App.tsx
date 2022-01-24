@@ -23,6 +23,7 @@ import {CounterProps} from './components/class/Counter'
 import { Private } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { List } from './components/generics/List';
+import { RandomNumber } from './components/Restrcitions/RandomNumber';
 
 function App() {
 
@@ -82,6 +83,7 @@ function App() {
       {/* <MutableRef/> */}
       <CounterProps message="chain of value"/>
       <Private isLoggedIn={true} component={Profile}/>
+      <RandomNumber value={10} isPositive/>
       {/* <List 
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={(item) => console.log(item)}
@@ -89,8 +91,8 @@ function App() {
       <List 
         items={[1,2,3,4,5]}
         onClick={(item) => console.log(item)}
-      /> */}
-      {/* <List 
+      />
+      <List 
         items={[
           {
             id:1,
